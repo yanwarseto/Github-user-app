@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/repository"
+        style="@style/Priority.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_repositories"
+        android:text="@string/repositories"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_repositories"
+        style="@style/Statistics"
+        app:layout_constraintBottom_toTopOf="@id/repository"
+        app:layout_constraintEnd_toEndOf="@id/repository"
+        app:layout_constraintStart_toStartOf="@id/repository"
+        tools:text="@tools:sample/us_zipcodes" />
+
+    <TextView
+        android:id="@+id/followers"
+        style="@style/Priority.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/followers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/repository" />
+
+    <TextView
+        android:id="@+id/tv_followers"
+        style="@style/Statistics"
+        app:layout_constraintBottom_toTopOf="@id/followers"
+        app:layout_constraintEnd_toEndOf="@id/followers"
+        app:layout_constraintStart_toStartOf="@id/followers"
+        tools:text="@tools:sample/us_zipcodes" />
+
+    <TextView
+        android:id="@+id/following"
+        style="@style/Priority.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/following"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/followers" />
+
+    <TextView
+        android:id="@+id/tv_following"
+        style="@style/Statistics"
+        app:layout_constraintBottom_toTopOf="@id/following"
+        app:layout_constraintEnd_toEndOf="@id/following"
+        app:layout_constraintStart_toStartOf="@id/following"
+        tools:text="@tools:sample/us_zipcodes" />
+</androidx.constraintlayout.widget.ConstraintLayout>

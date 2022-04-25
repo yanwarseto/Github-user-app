@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GithubUserApp" parent="Theme.MaterialComponents.DayNight">
+        <!--  Primary brand color.  -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/dark_mode</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!--  Secondary brand color.  -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/red_light</item>
+        <!--  Status bar color.  -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!--  Customize your theme here.  -->
+        <item name="background">@color/dark_mode</item>
+        <item name="backgroundColor">@color/dark_mode</item>
+        <item name="tabStyle">@style/Widget.App.TabLayout</item>
+    </style>
+
+    <style name="Widget.App.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabTextColor">@color/white</item>
+        <item name="tabBackground">@color/dark_mode</item>
+    </style>
+</resources>

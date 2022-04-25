@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/avatar_description"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/Priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/iv_avatar"
+        app:layout_constraintStart_toStartOf="@id/iv_avatar"
+        app:layout_constraintTop_toBottomOf="@id/iv_avatar"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        style="@style/Priority.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@id/tv_name"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        tools:text="@tools:sample/first_names" />
+
+    <include
+        android:id="@+id/statistics"
+        layout="@layout/layout_statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_username" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/Priority.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/ic_baseline_location_on_24"
+        app:layout_constraintStart_toStartOf="@id/statistics"
+        app:layout_constraintTop_toBottomOf="@id/statistics"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        style="@style/Priority.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/ic_baseline_home_work_24"
+        app:layout_constraintStart_toStartOf="@id/tv_location"
+        app:layout_constraintTop_toBottomOf="@id/tv_location"
+        tools:text="@tools:sample/full_names" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
